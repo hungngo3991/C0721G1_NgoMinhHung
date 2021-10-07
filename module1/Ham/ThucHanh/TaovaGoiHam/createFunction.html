@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>createFunction</title>
+</head>
+<body>
+<script>
+
+    function YorN(xacnhan) {
+        let answer = ""
+        if (xacnhan) {
+            answer = "OK"
+        } else {
+            answer = "Maybe later"
+        }
+        return answer
+    }
+
+    let question = confirm("Why don't we start learning Java right now?")
+
+    let java = YorN(question)
+
+    alert(java)
+
+</script>
+
+</body>
+</html>

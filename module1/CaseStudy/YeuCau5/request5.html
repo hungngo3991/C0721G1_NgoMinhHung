@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>request5</title>
+</head>
+<body>
+<script>
+    // Bai 1
+
+    // let m = parseInt(prompt("Please enter m: "));
+    // let n = parseInt(prompt("Please enter n: "));
+    // let matrix = new Array();
+    // for (let i = 0; i < m; i++) {
+    //     matrix[i] = new Array();
+    //     for (let j = 0; j < n; j++) {
+    //         matrix[i][j] = parseInt(prompt("Please enter the value at index: " + i + " | " + j));
+    //     }
+    // }
+    //
+    // let result = [];
+    // for (let i = 0; i < matrix.length; i++) {
+    //     for (let j = 0; j < matrix[i].length; j++) {
+    //         if (matrix[i][j] % 2 === 0) {
+    //             result.push(matrix[i][j]);
+    //         }
+    //     }
+    // }
+    // let total = 0;
+    // for (let x = 0; x < result.length; x++) {
+    //     total += result[x];
+    // }
+    // document.write("The even numbers in the above matrix are: " + result.join(" ") + "<br>");
+    // document.write("The sum of even numbers in the above matrix is: " + total);
+
+    // Bai 2
+
+    // let m = parseInt(prompt("Please enter m: "));
+    // let n = parseInt(prompt("Please enter n: "));
+    // let matrix = new Array();
+    // for (let i = 0; i < m; i++) {
+    //     matrix[i] = new Array();
+    //     for (let j = 0; j < n; j++) {
+    //         matrix[i][j] = Math.floor((Math.random() * 100) + 1);
+    //     }
+    // }
+    //
+    // function checkPrime(number) {
+    //     let check = true;
+    //     let x;
+    //     for (x = 2; x <= Math.sqrt(number); x++) {
+    //         if (number % x === 0 && number > 2) {
+    //             check = false;
+    //         }
+    //     }
+    //     return check;
+    // }
+    //
+    // let listPrime = [];
+    // for (let k = 0; k < matrix.length; k++) {
+    //     for (let l = 0; l < matrix[k].length; l++) {
+    //         if (checkPrime(matrix[k][l])) {
+    //             listPrime.push(matrix[k][l]);
+    //         }
+    //     }
+    // }
+    // for (let i = 0; i < listPrime.length; i++) {
+    //     if (listPrime[i] === 1) {
+    //         listPrime.splice(i, 1);
+    //     }
+    // }
+    // document.write(matrix +"<br>");
+    // document.write("The prime number in the array is: " + listPrime.join(" ") + "<br>");
+    // document.write("There are all " + listPrime.length + " prime numbers in this array");
+
+
+    // Bai 3
+
+    let m = parseInt(prompt("Please enter m: "));
+    let n = parseInt(prompt("Please enter n: "));
+    let matrix = new Array();
+    for (let i = 0; i < m; i++) {
+        matrix[i] = new Array();
+        for (let j = 0; j < n; j++) {
+            matrix[i][j] = Math.floor((Math.random() * 100) + 1);
+        }
+    }
+    let min = matrix[0][0];
+    let max = matrix[2][2];
+    for (let i = 0; i < matrix.length; i++) {
+        for (let j = 0; j < matrix[i].length; j++) {
+            if (matrix[i][j] < min) {
+                min = matrix[i][j];
+            }
+        }
+    }
+
+    for (let i = matrix.length - 1; i >= 0; i--) {
+        for (let j = matrix[i].length - 1; j >= 0; j--) {
+            if (matrix[i][j] > max) {
+                max = matrix[i][j];
+            }
+        }
+    }
+    document.write(matrix + "<br>");
+    document.write("The largest value in this array is: " + max + "<br>");
+    document.write("The smallest value in this array is: " + min);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>multi</title>
+</head>
+<body>
+
+
+<script>
+
+    let tieude
+    tieude = "<h2>Bảng cửu chương</h2>"
+
+    document.write(tieude)
+
+    let cuuchuong;
+    cuuchuong = "<table border='1' width='1000' cellspacing='2' cellpadding='3'>"
+    for (let i = 1; i <= 9; i++) {
+        cuuchuong = cuuchuong + "<tr>"
+        for (let j = 2; j <= 9; j++) {
+            cuuchuong = cuuchuong + `<td> ${j}x${i}=${j * i}</td>`
+        }
+        cuuchuong = cuuchuong + "</tr>"
+    }
+    cuuchuong = cuuchuong + "</table>"
+    document.write(cuuchuong)
+
+</script>
+</body>
+</html>

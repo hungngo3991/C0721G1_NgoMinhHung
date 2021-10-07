@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>request4</title>
+</head>
+<body>
+<script>
+    // Bai 1
+
+    // let string = prompt("Please enter a character string: ");
+    // let array = string.split("");
+    // let result = [];
+    // for (let i = 0; i < array.length;) {
+    //     if (array[i] === " " && array[i + 1] === " " || array[0] === " " || array[array.length - 1] === " ") {
+    //         for (let j = i; j < array.length; j++) {
+    //             array[j] = array[j + 1];
+    //         }
+    //         array[array.length - 1] = "";
+    //     } else {
+    //         i++;
+    //     }
+    // }
+    // result.push(array[0].toUpperCase());
+    // for (let i = 1; i < array.length; i++) {
+    //     if (array[i - 1] === " ") {
+    //         result.push(array[i].toUpperCase());
+    //     } else {
+    //         result.push(array[i].toLowerCase());
+    //     }
+    // }
+    // document.write(result.join("") + "<br>");
+    // let array1 = result.join("").split(" ");
+    // let max = array1[0].length;
+    // let string1 = array1[0];
+    // for (let i = 1; i < array1.length; i++) {
+    //     if (max < array1[i].length) {
+    //         max = array1[i].length;
+    //         string1 = array1[i];
+    //     }
+    // }
+    // document.write(string1);
+
+
+    //Bai 2
+
+    // let n = parseInt(prompt("Please enter N of the character string"));
+    // let str = [];
+    // for (let i = 0; i < n; i++) {
+    //     str[i] = prompt("Enter the character with index: " + i + " in that string");
+    // }
+    // str.sort();
+    // let result = [];
+    // for (let i = 0; i < str.length; i++) {
+    //     if (str[i] !== str[i + 1]) {
+    //         result.push(str[i]);
+    //     }
+    // }
+    // document.write("There are " + result.length + " different characters: " + result.join(" "));
+
+    // Bai 3
+
+
+    let string1 = prompt("Please enter the first character string: ");
+    let string2 = prompt("Please enter the second character string: ");
+    let array1 = string1.split("");
+    let array2 = string2.split("");
+    let count = 0;
+    for (let i = 0; i < array1.length; i++) {
+        for (let j = 0; j < array2.length; j++) {
+            if (array1[i] === array2[j]) {
+                array2.splice(j, 1);
+                count++;
+                break;
+            }
+        }
+    }
+    document.write("There are " + count + " common characters of two strings " + string1 + " and " + string2);
+
+
+</script>
+
+</body>
+</html>

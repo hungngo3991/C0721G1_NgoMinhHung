@@ -1,0 +1,30 @@
+
+
+.container {
+    width: 600px;
+    height: 400px;
+
+
+    background-color: forestgreen;
+}
+
+label {
+    width: 30%;
+    float: left;
+    margin-left: 2%;
+    color: blue;
+}
+
+.sub {
+    width: 60%;
+    margin-left: 2%;
+    float: left;
+}
+.element {
+    width: 100%;
+    float: left;
+}
+h2{
+    color: blue;
+    background-color: aqua;
+}

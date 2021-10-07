@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rectangle</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1200px" height="300px" style="border:1px solid black;"></canvas>
+<p id="result"></p>
+<script>
+    let res = document.getElementById('result')
+
+
+    class Rectangle {
+
+        constructor(width, height) {
+            this.width = width
+            this.height = height
+        }
+
+        peri() {
+            return 2 * (this.width + this.height)
+        }
+
+        area() {
+            return this.width * this.height
+        }
+
+        display() {
+            let canvas = document.getElementById("myCanvas")
+            let context = canvas.getContext("2d")
+            context.rect(20, 20, this.width, this.height)
+            context.stroke()
+            res.innerHTML = `Diện tích = ${this.area()}, Chu vi = ${this.peri()}`
+        }
+
+
+    }
+
+    function Rec() {
+        let rec = new Rectangle(80, 100)
+        rec.display()
+    }
+
+    Rec()
+
+</script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loop2</title>
+</head>
+<body>
+
+
+<!--bai 1-->
+
+
+<h1 id="result" style="text-align: center"></h1>
+<script>
+    function Fibo(n) {
+        if (n < 2) {
+            return 1
+        } else {
+            return Fibo(n - 2) + Fibo(n - 1)
+        }
+    }
+
+    function display() {
+        let n = prompt("Nhập N số Finbonancci đầu tiên cần hiển thị :")
+        let res = document.getElementById("result")
+        let arrayOfFibo = ""
+        for (let i = 1; i <= n; i++) {
+            arrayOfFibo += `${Fibo(i)}, `
+        }
+        res.innerHTML = arrayOfFibo
+    }
+
+    display()
+</script>
+
+<!--bai 2-->
+
+<!--<label for="i"> PositiveInteger = </label><input type="text" size="10" id="i">-->
+<!--<input type="button" value="Calculate factorial" id="btn">-->
+<!--<h1 id="result"></h1>-->
+<!--<script>-->
+<!--    let res = document.getElementById("result")-->
+<!--    let btn = document.getElementById("btn")-->
+<!--    btn.addEventListener("click", function () {-->
+<!--        let number = document.getElementById("i").value-->
+<!--        if (isNaN(number)) {-->
+<!--            res.innerHTML = "Input must be a number"-->
+<!--        } else {-->
+<!--            let result = 1-->
+<!--            for (let i = number; i > 0; i&#45;&#45;) {-->
+<!--                result = result * i-->
+<!--            }-->
+<!--            res.innerHTML = `${number}! = ${result}`-->
+<!--        }-->
+<!--    })-->
+<!--</script>-->
+
+<!--bai 3-->
+
+
+<!--<h2 id="result1"></h2>-->
+<!--<h2 id="result2"></h2>-->
+<!--<h2 id="result3"></h2>-->
+<!--<h2 id="result4"></h2>-->
+<!--<script>-->
+<!--    let res1 = document.getElementById("result1")-->
+<!--    let res2 = document.getElementById("result2")-->
+<!--    let res3 = document.getElementById("result3")-->
+<!--    let res4 = document.getElementById("result4")-->
+
+<!--    function display1() {-->
+<!--        let i = 1-->
+<!--        let n = 5-->
+<!--        let triangle = ""-->
+<!--        while (i <= n) {-->
+<!--            for (let j = 1; j <= i; j++) {-->
+<!--                triangle += "*"-->
+<!--            }-->
+<!--            triangle += "<br/>"-->
+<!--            i++-->
+<!--        }-->
+<!--        res1.innerHTML = triangle-->
+<!--    }-->
+
+<!--    function display2() {-->
+<!--        let i = 5-->
+<!--        let triangle = ""-->
+<!--        while (i > 0) {-->
+<!--            for (let j = 1; j <= i; j++) {-->
+<!--                triangle += "*"-->
+<!--            }-->
+<!--            triangle += "<br/>"-->
+<!--            i&#45;&#45;-->
+<!--        }-->
+<!--        res2.innerHTML = triangle-->
+<!--    }-->
+
+<!--    function display3() {-->
+<!--        let n = 5-->
+<!--        let row = ""-->
+<!--        for (let i = 1; i <= n; i++) {-->
+<!--            for (let j = 1; j <= (n - i); j++) {-->
+<!--                row += "&nbsp&nbsp;"-->
+<!--            }-->
+<!--            for (let k = 1; k <= i; k++) {-->
+<!--                row += "*"-->
+<!--            }-->
+<!--            row += "<br/>"-->
+<!--            res3.innerHTML = row-->
+<!--        }-->
+<!--    }-->
+
+<!--    function display4() {-->
+<!--        let n = 5-->
+<!--        let row = ""-->
+<!--        for (let i = 0; i <= n; i++) {-->
+<!--            for (let j = 1; j <= i; j++) {-->
+<!--                row += "&nbsp&nbsp;"-->
+<!--            }-->
+<!--            for (let j = 5; j > i; j&#45;&#45;) {-->
+<!--                row += "*"-->
+<!--            }-->
+<!--            row += "<br/>"-->
+<!--        }-->
+<!--        res4.innerHTML = row-->
+<!--    }-->
+
+
+<!--    display1()-->
+<!--    display2()-->
+<!--    display3()-->
+<!--    display4()-->
+<!--</script>-->
+
+
+<!--bai 4-->
+
+<!--<h2 id="result"></h2>-->
+<!--<script>-->
+
+<!--    function printRectangle(w, h) {-->
+<!--        let result = ""-->
+<!--        let res = document.getElementById("result")-->
+<!--        for (let i = 0; i <= h; i++) {-->
+<!--            for (let j = 0; j <= w; j++) {-->
+<!--                if (i === 0 || i === h) {-->
+<!--                    result += "*"-->
+<!--                } else {-->
+<!--                    if (j === 0 || j === w) {-->
+<!--                        result += "*"-->
+<!--                    } else {-->
+<!--                        result += "&nbsp&nbsp;"-->
+<!--                    }-->
+<!--                }-->
+
+<!--            }-->
+<!--            result += "<br/>"-->
+<!--        }-->
+<!--        res.innerHTML = result-->
+<!--    }-->
+
+<!--    printRectangle(20, 6)-->
+<!--</script>-->
+
+
+<!--bai 5-->
+
+<!--<label for="m"> Số tiền gửi ban đầu:</label>-->
+<!--<input type="text" value="" id="m">-->
+
+<!--<label for="r"> Lãi suất (%)/ năm:</label>-->
+<!--<input type="text" value="" id="r">-->
+
+<!--<label for="t"> Số tháng gửi:</label>-->
+<!--<input type="text" value="" id="t">-->
+
+<!--<input type="button" value="Calculate" onclick="Calculate()">-->
+<!--<h3 id="result"></h3>-->
+<!--<script>-->
+<!--    let res = document.getElementById("result")-->
+<!--    function Calculate() {-->
+<!--        let m = parseFloat(document.getElementById("m").value)-->
+<!--        let r = parseFloat(document.getElementById("r").value)-->
+<!--        let t = parseFloat(document.getElementById("t").value)-->
+<!--        let result = 0-->
+<!--        if (isNaN(m) || isNaN(r) || isNaN(t)) {-->
+<!--            res.innerHTML = " input  must be a number "-->
+<!--        } else {-->
+<!--            result = m * (r / 100) / 12 * t-->
+<!--            res.innerHTML = "Số tiền lãi = " + result-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--bai 6-->
+
+<!--<script>-->
+<!--    let height = 5-->
+
+<!--    function printUpHeart() {-->
+
+<!--        for (let i = 0; i < height; i++) {-->
+<!--            for (let j = height - i; j > 0; j&#45;&#45;) {-->
+<!--                document.write("&nbsp&nbsp")-->
+<!--            }-->
+<!--            for (let m = 1; m <= i * 2 + 1; m++) {-->
+<!--                document.write("*")-->
+<!--            }-->
+<!--            for (let n = height - i; n > 0; n&#45;&#45;) {-->
+<!--                document.write("&nbsp&nbsp&nbsp&nbsp")-->
+<!--            }-->
+<!--            for (let k = 1; k <= i * 2 + 1; k++) {-->
+<!--                document.write("*")-->
+<!--            }-->
+<!--            document.write("<br>")-->
+<!--        }-->
+<!--    }-->
+
+<!--    function printDownHeart() {-->
+<!--        for (let i = 0; i < height * 2; i++) {-->
+<!--            for (let j = 0; j < i; j++) {-->
+<!--                document.write("&nbsp&nbsp")-->
+<!--            }-->
+<!--            for (let m = height * 4 - i * 2 + 1; m > 1; m&#45;&#45;) {-->
+<!--                document.write("*")-->
+<!--            }-->
+<!--            document.write("<br>")-->
+<!--        }-->
+<!--    }-->
+
+<!--    printUpHeart()-->
+<!--    printDownHeart()-->
+
+<!--</script>-->
+
+
+</body>
+</html>

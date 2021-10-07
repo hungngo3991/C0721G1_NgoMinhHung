@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>phone</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        constructor(pin, status) {
+            this.pin = pin;
+            this.status = status;
+            this.inboxMessage = [];
+            this.sentMessage = [];
+        }
+
+        isOnOffMobile() {
+            if (this.status) {
+                alert("Điện thoại đang bật")
+                return this.status;
+            } else {
+                alert("ĐIện htoaij đang tắt.")
+                return this.status;
+            }
+        }
+
+
+        setOnOffMobile() {
+            if (this.status) {
+                this.status = false;
+                alert("Đã tắt điện thoại");
+            } else {
+                this.status = true;
+                alert("Đã bật điện thoại");
+            }
+        }
+
+
+        sendMessage(message, mobile) {
+            if (this.isOnOffMobile()) {
+                this.sentMessage.push(message);
+                mobile.receiveMessage(message);
+                this.setPin();
+            } else {
+                alert("Điện thoại đang tắt nên không xài được!");
+            }
+        }
+
+        receiveMessage(message) {
+            this.inboxMessage.push(message);
+        }
+
+        setPin() {
+            this.pin--;
+        }
+
+        getPin() {
+            return this.pin;
+        }
+
+        updatePin() {
+            this.pin = 100
+        }
+
+    }
+
+    let samsung = new Mobile(100, true)
+
+    let nokia = new Mobile(100, true)
+
+    samsung.setOnOffMobile()
+
+    samsung.sendMessage("Alo nokia", nokia)
+    samsung.sendMessage("Alo nokiaplus", nokia)
+    samsung.sendMessage("Alo nokiaprime", nokia)
+
+    nokia.sendMessage("Hi Samsung", samsung)
+
+    // console.log(samsung.sentMessage);
+    console.log(samsung.inboxMessage)
+
+    console.log(nokia.inboxMessage)
+
+    console.log(samsung.getPin())
+
+    console.log(nokia.getPin())
+
+</script>
+</body>
+</html>

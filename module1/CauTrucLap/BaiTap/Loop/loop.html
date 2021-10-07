@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loop</title>
+
+</head>
+<body>
+
+<!--bai 1-->
+
+<script>
+    for ( let i = 1; i < 100; i ++){
+        document.write(i + "<br>")
+
+        if ( i === 99){
+            document.write("Done")
+        }
+    }
+</script>
+
+
+<!--bai 2-->
+
+<!--<script>-->
+<!--    do {-->
+<!--        thongbao = parseInt(prompt("Nhập thông tin nhiệt độ hiện tại"))-->
+<!--    }-->
+<!--    while (isNaN(thongbao))-->
+<!--    if (thongbao < 20) {-->
+<!--        alert("Tăng nhiệt độ")-->
+<!--    } else if (thongbao > 100) {-->
+<!--        alert("Giảm nhiệt độ")-->
+<!--    } else {-->
+<!--        alert("OK")-->
+<!--    }-->
+<!--</script>-->
+
+<!--bai 3-->
+
+<!--<h1 id="result" style="text-align: center"></h1>-->
+<!--<script>-->
+<!--    function Fibo(n) {-->
+<!--        if (n < 2) {-->
+<!--            return 1-->
+<!--        } else {-->
+<!--            return Fibo(n - 2) + Fibo(n - 1)-->
+<!--        }-->
+<!--    }-->
+
+<!--    function display() {-->
+<!--        let n = prompt("Nhập N số trong dãy Finbonacci đầu tiên cần hiển thị :")-->
+<!--        let res = document.getElementById("result")-->
+<!--        let arrayOfFibo = ""-->
+<!--        for (let i = 1; i <= n; i++) {-->
+<!--            arrayOfFibo += `${Fibo(i)}, `-->
+<!--        }-->
+<!--        res.innerHTML = arrayOfFibo-->
+<!--    }-->
+
+<!--    display()-->
+<!--</script>-->
+
+
+<!--bai 4-->
+
+
+<!--<h1 id="result" style="text-align: center"></h1>-->
+<!--<script>-->
+<!--    res = document.getElementById("result")-->
+
+<!--    function Fibo(n) {-->
+<!--        if (n < 2) {-->
+<!--            return 1-->
+<!--        } else {-->
+<!--            return Fibo(n - 2) + Fibo(n - 1)-->
+<!--        }-->
+<!--    }-->
+
+<!--    function check() {-->
+<!--        let n = 2-->
+<!--        while (Fibo(n) % 5 !== 0) {-->
+<!--            n += 1-->
+<!--        }-->
+<!--        res.innerHTML = `${Fibo(n)}`-->
+<!--    }-->
+
+<!--    check()-->
+<!--</script>-->
+
+<!--bai 5-->
+
+<!--<h1 id="result" style="text-align: center"></h1>-->
+<!--<script>-->
+<!--    function Fibo(n) {-->
+<!--        if (n < 2) {-->
+<!--            return 1-->
+<!--        } else {-->
+<!--            return Fibo(n - 2) + Fibo(n - 1)-->
+<!--        }-->
+<!--    }-->
+
+<!--    function display() {-->
+<!--        let n = prompt("Nhập N số Finbonancci đầu tiên cần để tính tổng :")-->
+<!--        let res = document.getElementById("result")-->
+<!--        let totalOfFibo = 0-->
+<!--        for (let i = 1; i <= n; i++) {-->
+<!--            totalOfFibo += Fibo(i)-->
+<!--        }-->
+<!--        res.innerHTML = totalOfFibo-->
+<!--    }-->
+
+<!--    display()-->
+<!--</script>-->
+
+<!--bai 6-->
+
+<!--<h1 id="result"></h1>-->
+<!--<script>-->
+<!--    let res = document.getElementById("result");-->
+
+<!--    function sumDivSeven() {-->
+<!--        let total = 0-->
+<!--        for (let i = 0; i < 30; i++) {-->
+<!--            total += 7 * i-->
+<!--        }-->
+<!--        res.innerHTML = "Tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên là: " +total-->
+<!--    }-->
+
+<!--    sumDivSeven()-->
+<!--</script>-->
+
+<!--bai 7 -->
+
+<!--<h3 id="result"></h3>-->
+<!--<script>-->
+<!--    let res = document.getElementById("result")-->
+<!--    let fizzBuzz = ""-->
+
+<!--    function printFizzBuzz() {-->
+<!--        for (let i = 1; i <= 100; i++) {-->
+<!--            if (i % 3 === 0 && i % 5 !== 0) {-->
+<!--                fizzBuzz += "Fizz "-->
+<!--            } else if (i % 5 === 0 && i % 3 !== 0) {-->
+<!--                fizzBuzz += "Buzz "-->
+<!--            } else if (i % 5 === 0 && i % 3 === 0) {-->
+<!--                fizzBuzz += "FizzBuzz "-->
+<!--            } else {-->
+<!--                fizzBuzz += i + " "-->
+<!--            }-->
+<!--        }-->
+<!--        res.innerHTML = fizzBuzz-->
+<!--    }-->
+
+<!--    printFizzBuzz()-->
+<!--</script>-->
+
+
+<!--bai 8-->
+
+<!--<h2>Bài 8 :Game đoán số</h2>-->
+
+<!--<hr>-->
+<!--<input type="button" id="btn1" value="Play" onclick="play()">-->
+<!--<input type="button" id="btn2" value="Play again" style="display:none" onclick="playAgain()">-->
+<!--<h1 id="result"><br></h1>-->
+<!--<script>-->
+<!--    let res = document.getElementById("result")-->
+<!--    let btn1 = document.getElementById("btn1")-->
+<!--    let btn2 = document.getElementById("btn2")-->
+
+<!--    function play() {-->
+<!--        let count = 0-->
+<!--        let min = parseInt(prompt("Min", ""))-->
+<!--        let max = parseInt(prompt("Max", ""))-->
+<!--        let random = Math.floor(Math.random() * (max - min + 1) + min)-->
+<!--        while (count < 3) {-->
+<!--            let gue = parseInt(prompt("Let's guess :", ""))-->
+<!--            if (random === gue) {-->
+<!--                res.innerHTML = "Congratulation !"-->
+<!--                btn1.style.display = "none"-->
+<!--                btn2.style.display = "block"-->
+<!--                break;-->
+<!--            } else {-->
+<!--                if (gue > random) {-->
+<!--                    alert(" Guess Number > Random Number")-->
+<!--                } else {-->
+<!--                    alert(" Guess Number < Random Number")-->
+<!--                }-->
+<!--                count += 1-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+
+<!--    function playAgain() {-->
+<!--        res.innerHTML = "<br/>"-->
+<!--        btn1.style.display = "block"-->
+<!--        btn2.style.display = "none"-->
+<!--    }-->
+<!--</script>-->
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dictionary</title>
+</head>
+<body>
+
+<script>
+    let english = ["Hello", "Goodbye", "House"]
+
+    let vietnam = ["Xin chào", "Tạm biệt", "Nhà"]
+
+    let input = prompt("Nhập vào")
+
+    let check = true
+
+    for (let i = 0; i < english.length; i++) {
+
+        if (input === english[i]) {
+            check = false
+            alert(vietnam[i])
+            break
+
+        }
+    }
+    if (check) {
+        alert("None")
+    }
+
+
+</script>
+</body>
+</html>

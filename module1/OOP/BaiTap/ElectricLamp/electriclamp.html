@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>electriclamp</title>
+</head>
+<body>
+<h3>Chức năng bật tắt bóng đèn</h3>
+<img src="lightoff.gif" id="lamp">
+<br>
+<button onclick="turnOnOffLight()">Bật/Tắt bóng đèn</button>
+<h4 id="result">Bóng đèn đang tắt</h4>
+<script>
+
+    class SwitchStatus {
+        constructor(status) {
+            this.status = status;
+        }
+
+        turnOnOff() {
+            this.status = !this.status;
+        }
+    }
+
+
+    class Light {
+        constructor(button) {
+            this.button = button;
+        }
+
+        switch() {
+            if (this.button.status === true) {
+                document.getElementById("lamp").src = "lighton.gif";
+                document.getElementById("result").innerHTML = "Bóng đèn đang bật";
+            } else {
+                document.getElementById("lamp").src = "lightoff.gif";
+                document.getElementById("result").innerHTML = "Bóng đèn đang tắt";
+            }
+        }
+    }
+
+    let switchStatus = new SwitchStatus(false);
+    let lamp = new Light(switchStatus);
+
+
+    function turnOnOffLight() {
+        switchStatus.turnOnOff();
+        lamp.switch();
+    }
+
+</script>
+</body>
+</html>

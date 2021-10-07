@@ -1,0 +1,48 @@
+.header {
+    background-color: #F0F8FF;
+    text-align: center;
+    padding: 10px;
+}
+
+body {
+    background-color: #F0F8FF;
+}
+
+h2 {
+    color: #00CED1;
+}
+
+.container {
+    background-color: #00FFFF;
+}
+
+.content {
+    height: 600px;
+    width: 100%;
+}
+
+.left {
+    background-color: #00BFFF;
+    width: 10%;
+    float: left;
+    height: 100%;
+}
+
+.right {
+    width: 90%;
+    float: right;
+    height: 100%;
+}
+
+.footer {
+    background-color: #F0F8FF;
+    height: 30px;
+    text-align: center;
+    padding: 10px;
+    color: #008B8B;
+}
+
+.task {
+    font-size: 15px;
+    margin: 30px;
+}

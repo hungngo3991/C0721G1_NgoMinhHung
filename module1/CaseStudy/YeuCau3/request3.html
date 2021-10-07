@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>request3</title>
+</head>
+<body>
+
+<script>
+
+    // Bai 1
+
+    // let A = [1, 2, 3, 4, 5]
+    //
+    // let B = A.map((val, index) => {
+    //     let sum = 0;
+    //
+    //     for (let i = 0; i < index + 1; i++) {
+    //         sum += A[i];
+    //     }
+    //     return sum;
+    // });
+    //
+    // document.write(B);
+
+    // Bai 2
+
+    // let A = [7, 2, 5, 3, 5, 3]
+    // let B = [7, 2, 5, 4, 6, 3, 5, 3]
+    //
+    //
+    //
+    // let C = B.filter(function (el) {
+    //     return A.indexOf(el) < 0;
+    // });
+    //
+    // document.write(C)
+
+
+    // Bai 3
+
+    // let numerators = [5, 4, 6, 8, 9, 7];
+    // let denominators = [6, 5, 4, 9, 10, 5];
+    // let max = numerators[0] / denominators[0];
+    // let index;
+    // for (let i = 0; i < numerators.length; i++) {
+    //     if ((numerators[i] / denominators[i]) > max) {
+    //         max = (numerators[i] / denominators[i]);
+    //         index = i;
+    //     }
+    // }
+    // document.write(max + " is the largest fraction with index: " + index);
+
+
+    // Bai 4
+
+    // let nums = prompt("Please enter a series of numbers: ");
+    // let array = Array.from(nums.toString()).map(Number);
+    // let result = [];
+    // for (let i = 0; i < array.length; i++) {
+    //     switch (array[i]) {
+    //         case 0:
+    //             result.push("không");
+    //             break;
+    //         case 1:
+    //             result.push("một");
+    //             break;
+    //         case 2:
+    //             result.push("hai");
+    //             break;
+    //         case 3:
+    //             result.push("ba");
+    //             break;
+    //         case 4:
+    //             result.push("bốn");
+    //             break;
+    //         case 5:
+    //             result.push("năm");
+    //             break;
+    //         case 6:
+    //             result.push("sáu");
+    //             break;
+    //         case 7:
+    //             result.push("bảy");
+    //             break;
+    //         case 8:
+    //             result.push("tám");
+    //             break;
+    //         case 9:
+    //             result.push("chín");
+    //             break;
+    //     }
+    // }
+    // document.write(result.join(" "));
+
+
+    // Bai 5
+
+    let total = 0;
+    let order;
+    do {
+        order = parseInt(prompt("Order a drink by dialing the number: "));
+        switch (order) {
+            case 1:
+                alert("You have selected Coffee");
+                alert("Unit price is: 1.74 $");
+                let quantity1 = parseInt(prompt("Please select quantity: "));
+                total += (1.74 * quantity1);
+                break;
+            case 2:
+                alert("You have selected Orange juice");
+                alert("Unit price is: 2.83 $");
+                let quantity2 = parseInt(prompt("Please select quantity: "));
+                total += (2.83 * quantity2);
+                break;
+            case 3:
+                alert("You have selected Carrot juice");
+                alert("Unit price is: 1.96 $");
+                let quantity3 = parseInt(prompt("Please select quantity: "));
+                total += (1.96 * quantity3);
+                break;
+            case 4:
+                alert("You have selected Tomato juice");
+                alert("Unit price is: 2.09 $");
+                let quantity4 = parseInt(prompt("Please select quantity: "));
+                total += (2.09 * quantity4);
+                break;
+            case 5:
+                alert("You have selected Water");
+                alert("Unit price is: 0.43 $");
+                let quantity5 = parseInt(prompt("Please select quantity: "));
+                total += (0.43 * quantity5);
+                break;
+            case 6:
+                alert("You have selected Coconut water");
+                alert("Unit price is: 3.04 $");
+                let quantity6 = parseInt(prompt("Please select quantity: "));
+                total += (3.04 * quantity6);
+                break;
+            case 7:
+                document.write("The total amount you have to pay is: " + total + " $");
+                alert("Thank you for choosing a drink. See you again!");
+                break;
+            default:
+                alert("Please enter a number from 1 to 7")
+        }
+    } while (order !== 7);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuchanh</title>
+    <style>
+        body {
+            padding-top: 50px
+        }
+    </style>
+</head>
+<body>
+<!--Bai 1: Tao va thao tac voi Mang-->
+
+<!--<input type="text" id="txtValue">-->
+<!--<input type="button" id="btnAdd" value="Add" onclick="add_element_to_array()">-->
+<!--<input type="button" id="btnDisplay" value="Display" onclick="display_array()">-->
+<!--<div id="result"></div>-->
+
+<!--<script>-->
+<!--    let index = 0-->
+<!--    let array = Array()-->
+<!--    let res = document.getElementById("result")-->
+
+<!--    function add_element_to_array() {-->
+<!--        array[index] = document.getElementById("txtValue").value-->
+<!--        alert("Element: " + array[index] + " added at index " + index)-->
+<!--        index++-->
+<!--        array[index] = ""-->
+
+<!--    }-->
+
+<!--    function display_array() {-->
+<!--        let e = "<hr>"-->
+<!--        for (let i = 0; i < array.length; i++) {-->
+<!--            e += "Element " + i + " = " + array[i] + "<br>"-->
+<!--        }-->
+<!--        res.innerHTML = e-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bai 2: Dao nguoc cac phan tu trong mang-->
+
+<!--<script>-->
+<!--    let x = [-3, 5, 1, 3, 2, 10]-->
+<!--    let first = 0-->
+<!--    let last = x.length - 1-->
+
+<!--    while (first < last) {-->
+<!--        let temp = x[first]-->
+<!--        x[first] = x[last]-->
+<!--        x[last] = temp-->
+<!--        first++-->
+<!--        last&#45;&#45;-->
+<!--    }-->
+
+<!--    document.write(x)-->
+
+<!--</script>-->
+
+<!--Bai 3: Tim gia tri trong mang-->
+
+<!--<script>-->
+<!--    let value = parseInt(prompt("Enter a number: "))-->
+<!--    let numbers = [-3, 5, 1, 3, 2, 10]-->
+<!--    for (let i = 0; i < numbers.length; i++){-->
+<!--        if (value === numbers[i]) {-->
+<!--            alert("Value " + numbers[i] + " found at index " + i);-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bai 4: Tim gia tri lon nhat trong mang-->
+
+<!--<script>-->
+<!--    let numbers = [-3, 5, 1, 3, 2, 10]-->
+<!--    let max = numbers[0]-->
+<!--    let index = 0-->
+
+<!--    for (let i = 1; i < numbers.length; i++) {-->
+<!--        if (numbers[i] > max) {-->
+<!--            max = numbers[i]-->
+<!--            index = i-->
+<!--        }-->
+<!--    }-->
+
+<!--    alert("max: " + max + " at index " + index)-->
+
+<!--</script>-->
+
+<!--Bai 5: Tao ban co caro don gian-->
+
+<h3>Caro Game Simple</h3>
+<p id="carogame"></p>
+<input type='button' value='Change Value' onclick='changeValue()'>
+
+<script>
+    let banco = document.getElementById("carogame")
+    let board = []
+    let data = ""
+    for (let i = 0; i < 5; i++) {
+        board[i] = Array(0, 0, 0, 0, 0)
+    }
+
+    for (let i = 0; i < 5; i++) {
+        data += "<br>"
+        for (let j = 0; j < 5; j++) {
+            data += board[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;"
+        }
+    }
+    banco.innerHTML = data
+
+    function changeValue() {
+        let positionX = prompt("X: ")
+        let positionY = prompt("Y: ")
+        data = ""
+        board[positionX][positionY] = "x"
+        for (let i = 0; i < 5; i++) {
+            data += "<br>";
+            for (let j = 0; j < 5; j++) {
+                data += board[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;"
+            }
+        }
+        banco.innerHTML = data
+    }
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prime</title>
+</head>
+<body>
+<script>
+
+    function checkPrime(a) {
+        if (a < 2) {
+            return false;
+        } else if (a === 2) {
+            return true;
+        } else if (a % 2 === 0) {
+            return false;
+        } else {
+            for (let i = 3; i <= Math.sqrt(a); i += 2) {
+                if (a % i === 0) {
+                    return false;
+
+                }
+            }
+        }
+        return true
+    }
+
+
+    let n = prompt("Nhập  vào số nguyên tố mà bạn muốn in ra", '');
+    let count = 0;
+    let number = 2;
+    let result = "";
+    while (count < n) {
+        if (checkPrime(number)) {
+            count += 1;
+            result = result + number + ",";
+        }
+        number += 1;
+    }
+    document.write(result);
+
+</script>
+</body>
+</html>

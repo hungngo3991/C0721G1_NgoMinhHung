@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkPrime</title>
+</head>
+<body>
+<script>
+    function checkPrime(a) {
+        if (a < 2) {
+            document.write("Số này không phải là số nguyên tố")
+            return false;
+        } else if (a === 2) {
+            document.write("Số này là số nguyên tố")
+            return true;
+        } else if (a % 2 === 0) {
+            document.write("Số này không phải là số nguyên tố")
+            return false;
+        } else {
+            for (let i = 3; i <= Math.sqrt(a); i += 2) {
+                if (a % i === 0) {
+                    document.write("Số này không phải là số nguyên tố")
+                    return false;
+
+                }
+            }
+        }
+        document.write("Số này là số nguyên tố")
+        return true
+    }
+
+    let input = parseInt(prompt("Nhập vào một số cần kiểm tra"))
+    checkPrime(input)
+</script>
+
+</body>
+</html>

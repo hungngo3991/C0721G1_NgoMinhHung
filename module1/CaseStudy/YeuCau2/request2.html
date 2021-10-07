@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>request2</title>
+</head>
+<body>
+
+<!--bai 1-->
+
+<!--<script>-->
+<!--    let luong-->
+<!--    let thue-->
+<!--    let trueluong-->
+<!--    do {-->
+<!--        luong = parseInt(prompt("Nhập vào lương nhân viên"))-->
+
+<!--    } while (isNaN(luong))-->
+
+<!--    if (luong >= 15000000) {-->
+<!--        thue = luong * 20 / 100-->
+<!--        trueluong = luong - thue-->
+<!--        document.write("Thuế thu nhập là: " + thue + " VND" + "<br>")-->
+<!--        document.write("Lương ròng là: " + trueluong + " VND")-->
+<!--    } else if (luong >= 7000000) {-->
+<!--        thue = luong * 10 / 100-->
+<!--        trueluong = luong - thue-->
+<!--        document.write("Thuế thu nhập là: " + thue + " VND" + "<br>")-->
+<!--        document.write("Lương ròng là: " + trueluong + " VND")-->
+<!--    } else {-->
+<!--        thue = luong * 5 / 100-->
+<!--        trueluong = luong - thue-->
+<!--        document.write("Thuế thu nhập là: " + thue + " VND" + "<br>")-->
+<!--        document.write("Lương ròng là: " + trueluong + " VND")-->
+<!--    }-->
+<!--</script>-->
+
+<!--bai 2-->
+
+<script>
+    let kytu
+
+    do {
+        kytu = prompt("Nhập vào một ký tự")
+    } while (!isNaN(kytu))
+    if (kytu === 'a' || kytu === 'e' || kytu === 'i' || kytu === 'o' || kytu === 'u' ||
+        kytu === 'A' || kytu === 'E' || kytu === 'I' || kytu === 'O' || kytu === 'U') {
+        document.write("Ký tự là nguyên âm " + kytu)
+    } else if ((kytu >= 'a' && kytu <= 'z') || (kytu >= 'A' && kytu <= 'Z')) {
+
+        document.write("Ký tự là phụ âm " + kytu)
+    } else {
+
+        document.write("Ký tự không thuộc bảng chữ cái " + kytu)
+    }
+
+</script>
+
+
+</body>
+
+</html>

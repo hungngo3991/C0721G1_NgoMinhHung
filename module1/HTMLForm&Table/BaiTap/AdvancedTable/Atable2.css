@@ -1,0 +1,62 @@
+table, th, td {
+    border: 4px solid #DCDCDC;
+    border-collapse: collapse;
+}
+
+table{
+    margin-left: 15%;
+    width: 70%;
+    height: 620px;
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+.red{
+    background-color: red;
+    border-color: white;
+}
+.orange{
+    background-color: orange;
+    border-color: white;
+}
+.blue{
+    background-color: blue;
+    border-color: white;
+}
+.red,.orange,.blue{
+    color: white;
+    font-size: larger;
+
+}
+.day{
+    border-color: white;
+    border-bottom-color: #DCDCDC;
+    font-size: larger;
+}
+#sun{
+    color: red;
+}
+#sat{
+    color: blue;
+}
+span{
+    border-bottom-width: medium;
+}
+
+.sup {
+    position: relative;
+    bottom: -1ex;
+    font-size: 100%;
+}
+.xanh{
+    color: blue;
+}
+.do{
+    color: red;
+}
+td{
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}

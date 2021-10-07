@@ -1,0 +1,32 @@
+
+.container{
+    float: left;
+    width: 100%;
+}
+
+.left{
+    float: left;
+    width: 45%;
+    margin-left: 6%;
+}
+.right{
+    float: left;
+    width: 45%;
+    text-align: right;
+
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    margin-left: 5%;
+    width: 90%;
+    height: 300px;
+}
+h2{
+    text-align: center;
+}
+h2, p{
+    color: blue;
+}

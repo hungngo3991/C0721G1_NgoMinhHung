@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>convert</title>
+    <link rel="stylesheet" href="convert.css">
+    <script src="convert.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="element">
+        <h3>Amount</h3><br>
+        <input type="text" name="input" id="input">
+    </div>
+    <div class="element">
+        <h3>From Currency</h3><br>
+        <select id="from">
+            <option value="VND">VietNam</option>
+            <option value="USD">USD</option>
+        </select>
+    </div>
+    <div class="element">
+        <h3>To Currency</h3><br>
+        <select id="to">
+            <option value="USD">USD</option>
+            <option value="VND">VietNam</option>
+        </select>
+    </div>
+    <div class="element">
+        <input class="submit" type="submit" value="Convert" onclick="convert()">
+    </div>
+
+
+    <p id="output"></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function2</title>
+</head>
+<body>
+<script>
+    // Bai 1  tính bình phương của một số bất kỳ
+    function binhphuong(x) {
+        return x * x;
+    }
+
+    // Bài 2  tính diện tích, chu vi hình tròn
+    function dientich(r) {
+        return r * r * 3.14
+    }
+
+    function chuvi(r) {
+        return 2 * r * 3.14
+    }
+
+    // Bài 3 tính giai thừa của một số nguyên bất kỳ
+    function giaithua(n) {
+        let result = 1
+        for (let i = 1; i <= n; i++) {
+            result = result * i;
+        }
+        return result;
+    }
+
+    // Bài 4 kiểm tra xem ký tự nhập vào có phải là ký tự số không
+    function checknumber(n) {
+        return (isNaN(n))
+    }
+
+    // Bài 5 Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất
+
+    function min(a, b, c) {
+        let min = a;
+        if (min > b) {
+            min = b
+        }
+        if (min > c) {
+            min = c
+        }
+        return min;
+    }
+
+    // Bài 6 Kiểm tra số nguyên dương
+
+    function checkInteger(n) {
+        if (n > 0) {
+            return true
+        }
+
+
+        return false
+    }
+
+    // Bài 7 Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó
+    function swap(a, b) {
+        let temp = a;
+        a = b;
+        b = temp;
+        console.log(a, b);
+    }
+
+    // Bài 8 Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+    function daoNguoc(arr) {
+        return reverse(arr)
+    }
+
+    // Bài 9
+
+    function counts(array, kytu) {
+        let count = 0;
+
+        for (let i = 0; i < array.length; i++) {
+
+            if (array.charAt(i) === kytu)
+                count++;
+        }
+        return count;
+    }
+
+    let arr = ["a","b","e","e","e"]
+    let arr2 = arr.toString()
+    let kytu = "e"
+
+    document.write(counts(arr2, kytu))
+
+
+</script>
+</body>
+</html>

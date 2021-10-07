@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Calculator</title>
+    <link href="scal.css" rel="stylesheet">
+    <script src="scal.js" defer></script>
+</head>
+<body>
+    <form class="calculator" name="cal">
+        <input type="text" class="value" name="txt" readonly="">
+
+        <div class="row">
+
+            <input type="button" class="num" value="1" onclick="document.cal.txt.value +='1'">
+            <input type="button" class="num" value="2" onclick="document.cal.txt.value +='2'">
+            <input type="button" class="num" value="3" onclick="document.cal.txt.value +='3'">
+            <input type="button" class="num" value="+" onclick="document.cal.txt.value +='+'">
+        </div>
+        <div class="row">
+            <input type="button" class="num" value="4" onclick="document.cal.txt.value +='4'">
+            <input type="button" class="num" value="5" onclick="document.cal.txt.value +='5'">
+            <input type="button" class="num" value="6" onclick="document.cal.txt.value +='6'">
+            <input type="button" class="num" value="-" onclick="document.cal.txt.value +='-'">
+        </div>
+        <div class="row">
+            <input type="button" class="num" value="7" onclick="document.cal.txt.value +='7'">
+            <input type="button" class="num" value="8" onclick="document.cal.txt.value +='8'">
+            <input type="button" class="num" value="9" onclick="document.cal.txt.value +='9'">
+            <input type="button" class="num" value="x" onclick="document.cal.txt.value +='*'">
+        </div>
+        <div class="row">
+            <input type="button" class="num" value="C" onclick="document.cal.txt.value =''">
+            <input type="button" class="num" value="0" onclick="document.cal.txt.value +='0'">
+            <input type="button" class="num" value="=" onclick="document.cal.txt.value = eval(cal.txt.value)">
+            <input type="button" class="num" value="/" onclick="document.cal.txt.value +='/'">
+        </div>
+
+    </form>
+
+
+</body>
+</html>

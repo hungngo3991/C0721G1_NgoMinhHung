@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simplegame</title>
+
+</head>
+<body>
+<div id="game"></div>
+<script>
+
+    class Character {
+        constructor(image, top, left, size) {
+            this.image = image;
+            this.top = top;
+            this.left = left;
+            this.size = size;
+
+        }
+
+        getCharacterElement() {
+            return '<img width="' + this.size + '"' + ' height="' + this.size + '"' +
+                ' src="' + this.image + '"' + ' style="top: ' + this.top + 'px; left:'
+                + this.left + 'px;position:absolute;">';
+        }
+
+        moveRight() {
+            this.left += 80;
+            console.log('ok: ' + this.left);
+        }
+
+        moveDown() {
+            this.top += 80;
+            console.log('ok: ' + this.top);
+        }
+
+        moveLeft() {
+            this.left -= 80;
+            console.log('ok: ' + this.left);
+        }
+
+        moveUp() {
+            this.top -= 80;
+            console.log('ok: ' + this.top);
+        }
+
+    }
+
+    let character = new Character('robot.jpg', 20, 20, 300);
+    console.log(window.innerWidth);
+    console.log(window.innerHeight);
+
+    function start() {
+        // if (character.left < window.innerWidth - character.size && character.top < window.innerHeight - character.size) {
+        //     character.moveRight();
+        // } else if (character.left > window.innerWidth - character.size && character.top < window.innerHeight - character.size) {
+        //     character.moveDown();
+        // } else if (character.left > window.innerWidth - character.size && character.top > window.innerHeight - character.size) {
+        //     character.moveLeft();
+        // } else if (character.left < window.innerWidth - character.size && character.top > window.innerHeight - character.size) {
+        //     character.moveUp();
+        // }
+
+        if (character.left < window.innerWidth - character.size && character.top < character.size/4) {
+            character.moveRight();
+        } else if (character.left > window.innerWidth - character.size && character.top < window.innerHeight - character.size) {
+            character.moveDown();
+        } else if (character.left > character.size/2 && character.top > window.innerHeight - character.size) {
+            character.moveLeft();
+        } else if (character.left < window.innerWidth - character.size && character.top > 0) {
+            character.moveUp();
+        }
+
+        document.getElementById('game').innerHTML = character.getCharacterElement();
+
+        setTimeout(start, 100)
+    }
+
+
+    start()
+
+</script>
+</body>
+</html>

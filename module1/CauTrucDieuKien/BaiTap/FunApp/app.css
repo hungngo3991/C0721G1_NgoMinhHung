@@ -1,0 +1,16 @@
+
+
+#yes{
+    position: absolute;
+    left: 150px;
+    top: 50px;
+}
+#no{
+    position: absolute;
+    left: 250px;
+    top: 50px
+}
+button{
+    background-color: white;
+    border-radius: 0.5rem;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form2</title>
+    <link rel="stylesheet" href="form2.css">
+</head>
+<body>
+    <div class="container">
+        <h2>ĐĂNG KÝ HỌC VIÊN</h2>
+        <form action="/action_page.php">
+            <div class="element">
+                <label>Họ và tên</label>
+                <input class="sub" type="text" id="name" name="yourname"><br><br>
+            </div>
+            <div class="element">
+                <label>Ngày sinh</label>
+                <input class="sub" type="text" id="date" name="yourdate"><br><br>
+            </div>
+            <div class="element">
+                <label>Giới tính</label>
+                <div class="sub">
+                <input type="radio" name="gender" value="nam"> Nam
+                <input type="radio" name="gender" value="nu"> Nữ
+                </div>
+                <br><br>
+            </div>
+            <div class="element">
+                <label>Địa chỉ</label>
+                <textarea rows="5" cols="22" class="sub"></textarea><br><br>
+            </div>
+            <div class="element">
+                <label>Lớp</label>
+                <select class="sub">
+                          <option>-Chọn lớp-</option>
+                         <option>A1</option>
+                          <option>A2</option>
+                </select><br><br>
+            </div>
+            <div class="element">
+                <label>Email</label>
+                <input class="sub" type="text" id="mail" name="mail"><br><br>
+            </div>
+            <div class="element">
+                <label>Điện thoại</label>
+                <input class="sub" type="text" id="phone" name="phone"><br><br>
+            </div>
+            <input type="submit" value="Đăng ký">
+            <input type="submit" value="Nhập lại">
+
+        </form>
+    </div>
+</body>
+</html>

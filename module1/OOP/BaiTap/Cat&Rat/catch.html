@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>catch</title>
+</head>
+<body>
+<script>
+
+    class Rat {
+        constructor(name, weight, speed, isDead) {
+            this.name = name
+            this.weight = weight
+            this.speed = speed
+            this.isDead = isDead
+        }
+
+        speak() {
+            document.write('chit chit...')
+        }
+    }
+
+    class Cat {
+        constructor(name, weight, speed) {
+            this.name = name
+            this.weight = weight
+            this.speed = speed
+        }
+
+        speak() {
+            document.write('meo meo...')
+        }
+
+        catchRat(rat) {
+            if (this.speed > rat.speed) {
+                document.write(`${this.name} can catch ${rat.name}.`)
+                return true
+            }
+            return false
+        }
+
+        eatRat(rat) {
+            if (this.catchRat(rat) && rat.isDead === false) {
+                this.weight += rat.weight
+                rat.isDead = true
+                rat.weight = 0
+                document.write(`${this.name}  eat ${rat.name} successful`)
+            } else {
+                document.write(`${this.name} can't eat ${rat.name} `)
+            }
+        }
+    }
+
+    let Tom = new Cat('Tom', 10, 15)
+    let Jerry = new Rat('Jerry', 2, 10, false)
+
+    document.write("Tom's original weight was: " + Tom.weight)
+    document.write("<br>")
+    Tom.eatRat(Jerry)
+    document.write("<br>")
+    document.write("Tom's weight increased to: " + Tom.weight)
+
+</script>
+</body>
+</html>

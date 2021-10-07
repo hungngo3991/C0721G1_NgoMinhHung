@@ -1,0 +1,18 @@
+body{
+    font-size: 25px;
+}
+span{
+    color: blue;
+}
+
+.black{
+    color: black;
+    font-weight: bolder;
+}
+.blue{
+    color: cornflowerblue;
+}
+.wiki{
+    position: relative;
+    left: 0.5%;
+}

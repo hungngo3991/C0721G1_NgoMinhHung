@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>array</title>
+</head>
+<body>
+<!--bai 1 - bai 5-->
+
+<!--<h3>Bài 1 - Bài 5</h3>-->
+<!--<input type="text" id="txtValue">-->
+<!--<input type="button" id="btnAdd" value="Add" onclick="addelementtoArray()">-->
+<!--<input type="button" id="btnDisplay" value="Display" onclick="displayArray()">-->
+
+<!--<div id="result0"></div>-->
+<!--<div id="result1"></div>-->
+<!--<div id="result2"></div>-->
+<!--<div id="result3"></div>-->
+<!--<div id="result4"></div>-->
+<!--<div id="result5"></div>-->
+
+<script>
+    // bai 1 - bai 5
+
+    // let x = 0;
+    // let array = Array();
+    //
+    // function addelementtoArray() {
+    //     if (document.getElementById("txtValue").value !== '' &&
+    //         isNaN(document.getElementById("txtValue").value) === false) {
+    //         array[x] = parseFloat(document.getElementById("txtValue").value);
+    //         x++;
+    //     } else {
+    //         document.getElementById("txtValue").value = "";
+    //     }
+    // }
+    //
+    //
+    // function displayArray() {
+    //     let e = "<hr/>";
+    //     let a1 = "<b>1. Number > 10 :</b>";
+    //     let a2 = "<b>5. Number is interger and < 0 :</b>";
+    //     let sum = 0;
+    //     let avg = 0;
+    //     for (let i = 0; i < array.length; i++) {
+    //         e += "Element " + i + " = " + array[i] + "<br/>";
+    //         if (array[i] >= 10) {
+    //             a1 += `${array[i]} ; `;
+    //         }
+    //         if (array[i] < 0 && Number.isInteger(array[i])) {
+    //             a2 += `${array[i]} ; `;
+    //         }
+    //         sum += array[i];
+    //     }
+    //     avg = sum / array.length;
+    //
+    //     document.getElementById("result0").innerHTML = e;
+    //     document.getElementById("result1").innerHTML = a1;
+    //     document.getElementById("result2").innerHTML =
+    //         `<b>2. Max value in array is: </b>${Math.max(...array)}<b>,
+    //              and index of max value is </b>${array.indexOf((Math.max(...array)))}`;
+    //     document.getElementById("result3").innerHTML = `<b>3. Sum = </b>${sum} <b>, Avg = </b>${avg}`;
+    //     document.getElementById("result4").innerHTML = `<b>4. Reverse array: </b>[${array.reverse()}]`;
+    //     document.getElementById("result5").innerHTML = a2
+    // }
+
+
+    // bai 6
+
+    // let n = prompt("Nhập N của mảng : ")
+    // let arr = [];
+    // for (let i = 0; i < n; i++) {
+    //     arr[i] = prompt("Nhập vào mảng giá trị các phần tử : " + i);
+    // }
+    // let v = prompt("Nhập số nguyên V: ");
+    // let check = true
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] === v) {
+    //         check = false
+    //         document.write("V is in the array")
+    //     }
+    // }
+    // if (check) {
+    //     document.write("V is not in the array")
+    // }
+
+
+    // bai 7
+
+    // let n = prompt("Nhập N của mảng : ")
+    // let arr = [];
+    // for (let i = 0; i < n; i++) {
+    //     arr[i] = prompt("Nhập vào mảng giá trị các phần tử : " + i);
+    // }
+    // let v = prompt("Nhập số nguyên V: ");
+    //
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] === v) {
+    //         for (let j = i; j < arr.length; j++) {
+    //             arr[j] = arr[j + 1]
+    //         }
+    //     }
+    // }
+    //
+    // document.write(arr);
+
+    // bai 8
+
+    let n = prompt("Nhập N của mảng : ")
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("Nhập vào mảng giá trị các phần tử : " + i);
+    }
+    arr.sort(function(a, b){return b-a})
+    document.write(arr)
+
+    // bai 9
+
+    // let n = prompt("Nhập N của mảng a : ")
+    // let a = [];
+    // for (let i = 0; i < n; i++) {
+    //     a[i] = prompt("Nhập vào mảng giá trị các phần tử : " + i);
+    // }
+    //
+    // let n2 = prompt("Nhập N của mảng b : ")
+    // let b = [];
+    // for (let i = 0; i < n2; i++) {
+    //     b[i] = prompt("Nhập vào mảng giá trị các phần tử : " + i);
+    // }
+    //
+    // let c = a.concat(b)
+    //
+    // document.write(c)
+
+
+
+</script>
+</body>
+</html>

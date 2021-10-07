@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>feetmeter</title>
+</head>
+<body>
+
+<h3>Nhập vào Feet hay Meter</h3>
+<input type="text" id="nhap">
+<input type="button" value="FeettoMeter" onclick="feetToMeter()">
+<input type="button" value="MetertoFeet" onclick="meterToFeet()">
+<p id="result"></p>
+<p id="result2"></p>
+<script>
+
+    function feetToMeter() {
+        let input = document.getElementById("nhap").value
+        let res = document.getElementById("result")
+        let factor = 0.305
+        let output = input * factor
+        res.innerHTML = " meter = " + output
+    }
+
+    function meterToFeet() {
+        let input = document.getElementById("nhap").value
+        let res2 = document.getElementById("result2")
+        let factor = 3.279
+        let output = input * factor
+        res2.innerHTML = " feet = " + output
+    }
+
+
+</script>
+</body>
+</html>

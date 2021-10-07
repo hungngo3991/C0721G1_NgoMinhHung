@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>request</title>
+</head>
+<body>
+
+<!--bai 1-->
+
+<!--Vẽ hình chữ nhật rỗng chiều dài x và chiều rộng y-->
+
+<!--<script>-->
+<!--    let x = parseInt(prompt("Nhập vào chiều dài x"))-->
+<!--    let y = parseInt(prompt("Nhập vào chiều rộng y"))-->
+<!--    -->
+<!--    function emptyRectangle() {-->
+<!--        for (let i = 0; i < x; i++) {-->
+<!--            for (let j = 0; j < y; j++) {-->
+<!--                if (i === 0 || j === 0 || i === x - 1 || j === y - 1) {-->
+<!--                    document.write("*")-->
+<!--                } else {-->
+<!--                    document.write("&nbsp&nbsp")-->
+<!--                }-->
+<!--            }-->
+<!--            document.write("<br>")-->
+<!--        }-->
+<!--    }-->
+
+<!--    emptyRectangle()-->
+<!--</script>-->
+
+<!--bai 2-->
+
+<!--Vẽ tam giác vuông cân rỗng có chiều cao h. Ví dụ: h = 5-->
+
+<!--<script>-->
+<!--    for (let i = 1; i <= 5; i++) {-->
+<!--        for (let j = 1; j <= 5; j++) {-->
+<!--            if ((i === 1 && j >= 2) || (i === 2 && j >= 3) || (i === 3 && j !== 1 && j !== 3)-->
+<!--                || (i === 4 && j !== 1 && j !== 4)) {-->
+<!--                document.write("&nbsp&nbsp");-->
+<!--            } else {-->
+<!--                document.write("*");-->
+<!--            }-->
+<!--        }-->
+<!--        document.write("<br>");-->
+<!--    }-->
+<!--</script>-->
+
+<!--bai 3-->
+<!--Vẽ tam giác cân đặc có chiều cao h.-->
+
+<!--<script>-->
+<!--    let height = 5-->
+
+<!--    function Triangle() {-->
+
+<!--        for (let i = 0; i < height; i++) {-->
+<!--            for (let j = height - i; j > 0; j&#45;&#45;) {-->
+<!--                document.write("&nbsp&nbsp")-->
+<!--            }-->
+<!--            for (let m = 1; m <= i * 2 + 1; m++) {-->
+<!--                document.write("*")-->
+<!--            }-->
+<!--            for (let n = height - i; n > 0; n&#45;&#45;) {-->
+<!--                document.write("&nbsp&nbsp")-->
+<!--            }-->
+
+<!--            document.write("<br>")-->
+<!--        }-->
+<!--    }-->
+
+<!--    Triangle()-->
+
+<!--</script>-->
+
+<!--bai 4-->
+
+<!--Vẽ tam giác cân rỗng có chiều cao h. Ví dụ: h = 5-->
+
+<script>
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 9; j++) {
+            if ((i === 1 && j !== 5) || (i === 2 && j !== 4 && j !== 6)
+                || (i === 3 && j !== 3 && j !== 7)
+                || (i === 4 && j !== 2 && j !== 8)) {
+                document.write("&nbsp&nbsp");
+            } else {
+                document.write("*");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
+
+</body>
+</html>
