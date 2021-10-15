@@ -19,4 +19,5 @@ public interface IUserRepository {
     List<User> searchByCountry(String countryN);
 
     List<User> sortByName(String sort);
+
 }

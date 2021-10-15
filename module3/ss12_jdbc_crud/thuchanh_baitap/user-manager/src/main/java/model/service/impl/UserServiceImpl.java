@@ -43,4 +43,5 @@ public class UserServiceImpl implements IUserService {
     public List<User> sortByName(String sort) {
         return userRepository.sortByName(sort);
     }
+
 }
