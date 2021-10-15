@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="donggoi_thuvien_java">
+    <output-path>$PROJECT_DIR$/../../../../../donggoi_thuvien_java</output-path>
+    <root id="archive" name="donggoi_thuvien_java.jar">
+      <element id="module-output" name="donggoi_thuvien_java" />
+    </root>
+  </artifact>
+</component>
