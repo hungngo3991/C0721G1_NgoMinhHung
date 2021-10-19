@@ -46,14 +46,14 @@
             <div class="col-3"></div>
             <div class="col-3"></div>
             <div class="col-3" style="display: flex;align-items: center">
-                <h4 style="color: yellow">Ngô Minh Hùng</h4>
+                <h4 style="color: #00FFFF">Ngô Minh Hùng</h4>
             </div>
         </div>
 
     </div>
 
 
-    <div class="menu" style="background-color: greenyellow;height: 50px">
+    <div class="menu" style="background-color: #8FBC8F;height: 50px">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -140,7 +140,7 @@
 
 
     <div class="footer">
-        <h2 style="text-align: center;color: #FFD700">Let's make travel great again</h2>
+        <h2 style="text-align: center;color: #00FFFF">Let's make travel great again</h2>
     </div>
 
 </div>
