@@ -79,7 +79,7 @@ public class ServiceRepositoryImpl implements IServiceRepository {
                 int id = rs.getInt("service_id");
                 String name = rs.getString("service_name");
                 int area = rs.getInt("area");
-                double cost = rs.getDouble("double");
+                double cost = rs.getDouble("cost");
                 int maxPeople = rs.getInt("max_people");
                 int rentTypeId = rs.getInt("rent_type_id");
                 int serviceTypeId = rs.getInt("service_type_id");

@@ -40,62 +40,62 @@
                 <div class="row justify-content-center">
                     <div class="col-auto">
                         <table class="table table-responsive">
-                            <c:if test="${customer != null}">
-                                <input type="hidden" name="id" value="<c:out value='${customer.customerID}' />"/>
+                            <c:if test="${existingCustomer != null}">
+                                <input type="hidden" name="id" value="<c:out value='${existingCustomer.customerID}' />"/>
                             </c:if>
                             <tr>
                                 <th>Customer Type ID:</th>
                                 <td>
-                                    <input type="text" name="typeid" value="<c:out value='${customer.customerTypeID}' />"
+                                    <input type="text" name="typeid" value="<c:out value='${existingCustomer.customerTypeID}' />"
                                     />
                                 </td>
                             </tr>
                             <tr>
                                 <th>Customer Name:</th>
                                 <td>
-                                    <input type="text" name="name" value="<c:out value='${customer.customerName}' />"
+                                    <input type="text" name="name" value="<c:out value='${existingCustomer.customerName}' />"
                                     />
                                 </td>
                             </tr>
                             <tr>
                                 <th>Customer Birthday:</th>
                                 <td>
-                                    <input type="text" name="birthday" value="<c:out value='${customer.birthday}' />"
+                                    <input type="text" name="birthday" value="<c:out value='${existingCustomer.birthday}' />"
                                     />
                                 </td>
                             </tr>
                             <tr>
                                 <th>Customer Gender:</th>
                                 <td>
-                                    <input type="text" name="gender" value="<c:out value='${customer.gender}' />"
+                                    <input type="text" name="gender" value="<c:out value='${existingCustomer.gender}' />"
                                     />
                                 </td>
                             </tr>
                             <tr>
                                 <th>Customer Id Card:</th>
                                 <td>
-                                    <input type="text" name="idcard" value="<c:out value='${customer.idCard}' />"
+                                    <input type="text" name="idcard" value="<c:out value='${existingCustomer.idCard}' />"
                                     />
                                 </td>
                             </tr>
                             <tr>
                                 <th>Customer Phone:</th>
                                 <td>
-                                    <input type="text" name="phone" value="<c:out value='${customer.phone}' />"
+                                    <input type="text" name="phone" value="<c:out value='${existingCustomer.phone}' />"
                                     />
                                 </td>
                             </tr>
                             <tr>
                                 <th>Customer Email:</th>
                                 <td>
-                                    <input type="text" name="email" value="<c:out value='${customer.email}' />"
+                                    <input type="text" name="email" value="<c:out value='${existingCustomer.email}' />"
                                     />
                                 </td>
                             </tr>
                             <tr>
                                 <th>Customer Address:</th>
                                 <td>
-                                    <input type="text" name="address" value="<c:out value='${customer.address}' />"
+                                    <input type="text" name="address" value="<c:out value='${existingCustomer.address}' />"
                                     />
                                 </td>
                             </tr>

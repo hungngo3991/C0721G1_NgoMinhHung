@@ -62,7 +62,7 @@
                         <li><a href="/employee">Employee</a></li>
                         <li><a href="/customer">Customer</a></li>
                         <li><a href="/service">Service</a></li>
-                        <li><a href="">Contract</a></li>
+                        <li><a href="/contract">Contract</a></li>
                         <li class="input-group" style="margin: -5px">
                             <input type="text" id="search" class="form-control" placeholder="Search">
                         </li>
@@ -78,12 +78,22 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-2" style="display: flex;flex-direction: column;margin-top: 40px">
-                        <a href="/customer?action=create" class="btn btn-primary" data-toggle="modal" style="margin: 1%"><i
+
+
+                        <a href="/customer?action=create" class="btn btn-primary" data-toggle="modal"
+                           style="margin: 1%"><i
                         ></i> <span>Add new Customer</span></a>
                         <a href="/service?action=create" class="btn btn-primary" data-toggle="modal" style="margin: 1%"><i
                         ></i> <span>Add new Service</span></a>
-                        <a href="#" class="btn btn-primary" data-toggle="modal" style="margin: 1%"><i
-                        ></i> <span>Item Three</span></a>
+                        <a href="/employee?action=create" class="btn btn-primary" data-toggle="modal"
+                           style="margin: 1%"><i
+                        ></i> <span>Add new Employee</span></a>
+                        <a href="/contract?action=create" class="btn btn-primary" data-toggle="modal"
+                           style="margin: 1%"><i
+                        ></i> <span>Add new Contract</span></a>
+                        <a href="/contractDetail?action=create" class="btn btn-primary" data-toggle="modal"
+                           style="margin: 1%"><i
+                        ></i> <span>Add new Contract Detail</span></a>
 
                     </div>
                     <div class="col-10" style="margin-top: 30px">

@@ -1,5 +1,7 @@
 package model.bean;
 
+import java.util.Date;
+
 public class Customer {
     private int customerID;
     private int customerTypeID;
